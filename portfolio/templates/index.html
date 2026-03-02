@@ -1,0 +1,1347 @@
+{% load static %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nithin P K | Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        .navbar {
+            background: rgba(2,6,23,0.9);
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .btn-info {
+            background: #38bdf8;
+            color: none;
+        }
+        .btn-info:hover {
+            background: #0ea5e9;
+        }
+
+        .card {
+            background: #1e293b;
+            border: none;
+            transition: 0.3s;
+            color: white;
+            border-radius: 15px;
+        }
+
+        p {
+            color: #cbd5f5;
+        }
+        h1, h2, h3, h4 {
+           color: white;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(56,189,248,0.3);
+        }
+
+        .skill-box {
+            padding: 15px;
+            background: #1e293b;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    .hero{   
+    height: 100vh;
+    background: radial-gradient(circle at top, #1e1b4b, #020617);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+.highlight {
+    color: #a855f7;
+}
+
+.hero-subtitle {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #94a3b8;
+    max-width: 600px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+    margin-top: 25px;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #9333ea, #a855f7);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.btn-outline {
+    padding: 12px 25px;
+    border: 1px solid #a855f7;
+    color: #a855f7;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #a855f7;
+    color: white;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #94a3b8;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #a855f7;
+}
+
+/* GLOW BLOBS */
+.blob {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #9333ea;
+    filter: blur(120px);
+    opacity: 0.5;
+    animation: float 6s infinite alternate;
+}
+
+.blob1 {
+    top: 20%;
+    left: 10%;
+}
+
+.blob2 {
+    bottom: 10%;
+    right: 10%;
+}
+
+/* ANIMATION */
+@keyframes float {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-50px);
+    }
+}.hero {
+    height: 100vh;
+    background: #000;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* NAME */
+.hero-name {
+    font-size: 56px;
+    font-weight: bold;
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+.hero-name span {
+    color: #a855f7;
+}
+
+/* ANIMATED TITLE */
+.hero-title {
+    font-size: 52px;
+    font-weight: bold;
+    color: white;
+    min-height: 60px;
+}
+
+/* SUBTITLE */
+.hero-subtitle {
+    font-size: 22px;   /* Increased */
+    color: #94a3b8;
+    max-width: 650px;
+    margin: 20px auto 0;
+    line-height: 1.6;
+}
+
+/* BUTTONS */
+.hero-buttons {
+    margin-top: 25px;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #9333ea, #a855f7);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn-outline {
+    padding: 12px 25px;
+    border: 1px solid #a855f7;
+    color: #a855f7;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #94a3b8;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #a855f7;
+}
+
+/* BLOBS */
+.blob {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #9333ea;
+    filter: blur(120px);
+    opacity: 0.5;
+    animation: float 6s infinite alternate;
+}
+
+.blob1 { top: 20%; left: 10%; }
+.blob2 { bottom: 10%; right: 10%; }
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-50px); }
+}
+/* ABOUT SECTION */
+.about-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #a855f7;
+    margin-bottom: 30px;
+}
+
+/* CARD */
+.about-card {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: auto;
+    color: #cbd5f5;
+    line-height: 1.8;
+    text-align: left;
+    box-shadow: 0 0 40px rgba(168,85,247,0.1);
+}
+
+/* PARAGRAPH */
+.about-card p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* TECH TITLE */
+.tech-title {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+/* TECH STACK */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* TAGS */
+.tech-stack span {
+    border: 1px solid #a855f7;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 6px;
+    color: #a855f7;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.tech-stack span:hover {
+    background: #a855f7;
+    color: white;
+}
+.social-icons {
+    position: static !important;
+}
+/* TITLE */
+.project-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #a855f7;
+    margin-bottom: 40px;
+}
+
+/* CARD */
+.project-card {
+    background: linear-gradient(135deg, #1e293b, #020617);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    color: white;
+}
+
+/* HOVER */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(168,85,247,0.3);
+}
+
+/* IMAGE */
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* BODY */
+.project-body {
+    padding: 20px;
+}
+
+.project-body h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-body p {
+    color: #cbd5f5;
+    font-size: 15px;
+}
+
+/* TECH STACK */
+.tech-stack {
+    margin-top: 15px;
+}
+
+.tech-stack span {
+    border: 1px solid #a855f7;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 12px;
+    color: #a855f7;
+}
+
+/* BUTTON */
+.project-btn {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #a855f7;
+    border-radius: 10px;
+    text-align: center;
+    color: #a855f7;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.project-btn:hover {
+    background: #a855f7;
+    color: white;
+}
+.project-card {
+    width: 100%;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-body p {
+    flex-grow: 1;
+}
+#projects .container {
+    max-width: 1000px;
+}
+.row {
+    gap: 20px;
+}
+.project-bg {
+    background: radial-gradient(circle at top left, #2a0a4a, #000000);
+    position: relative;
+    overflow: hidden;
+}
+.project-bg::before,
+.project-bg::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.4), transparent);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.project-bg::before {
+    top: -100px;
+    left: -100px;
+}
+
+.project-bg::after {
+    bottom: -100px;
+    right: -100px;
+}
+.project-bg .container {
+    position: relative;
+    z-index: 1;
+}
+#projects h2 {
+    color: #a855f7;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-body {
+    padding: 20px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+}
+.cert-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.cert-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+.cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cert-header h4 {
+    color: white;
+}
+
+.cert-header a {
+    color: #a855f7;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.cert-header a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.cert-card p {
+    color: #cbd5f5;
+    margin: 5px 0;
+}
+
+.row {
+    justify-content: center;
+}
+
+.cert-card {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 100%;
+    }
+}
+
+/* RESUME SECTION */
+.resume-section {
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at top left, #1e1b4b, #020617);
+}
+
+.resume-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+
+.resume-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(168, 85, 247, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.resume-icon i {
+    font-size: 30px;
+    color: #a855f7;
+}
+
+.resume-section h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.resume-section p {
+    color: #cbd5f5;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.resume-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: linear-gradient(135deg, #a855f7, #9333ea);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-outline {
+    border: 2px solid #a855f7;
+    color: #a855f7;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-outline:hover {
+    background: #a855f7;
+    color: white;
+}
+
+.resume-info {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.resume-section::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #9333ea;
+    filter: blur(150px);
+    top: -100px;
+    left: -100px;
+    opacity: 0.3;
+}
+
+.resume-section::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #9333ea;
+    filter: blur(150px);
+    bottom: -100px;
+    right: -100px;
+    opacity: 0.3;
+}
+
+.resume-container {
+    position: relative;
+    z-index: 2;
+}
+
+/* EXPERIENCE SECTION */
+.exp-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+}
+
+.exp-title span {
+    color: #a855f7;
+}
+
+.exp-date {
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+.exp-text {
+    color: #cbd5f5;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.tech-title {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+.about-card {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
+    max-width: 900px;
+    margin: auto;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    background: radial-gradient(circle at top, #1e1b4b, #020617);
+    padding: 80px 0;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* GRID */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+/* LEFT SIDE */
+.contact-info h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #cbd5f5;
+    margin-bottom: 20px;
+}
+
+/* INFO ITEM */
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-item i {
+    font-size: 18px;
+    color: #a855f7;
+    background: #1e293b;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* RIGHT FORM */
+.contact-form {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
+}
+
+.contact-form h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #020617;
+    color: white;
+}
+
+/* BUTTON */
+.contact-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(90deg, #a855f7, #9333ea);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    background: #0b1220;
+    padding: 50px 0 20px;
+    color: #cbd5f5;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* LEFT */
+.footer-left h3 {
+    color: #a855f7;
+    font-weight: 600;
+}
+
+.footer-left p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* ICONS */
+.footer-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-icons a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #111827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cbd5f5;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.footer-icons a:hover {
+    background: linear-gradient(45deg, #9333ea, #a855f7);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* LINE */
+.footer hr {
+    border: 0.5px solid #1f2937;
+    margin: 30px 0;
+}
+
+/* COPYRIGHT */
+.footer-copy {
+    text-align: center;
+    font-size: 14px;
+    color: #94a3b8;
+}
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold">Nithin</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content text-center">
+
+        <!-- NAME (TOP) -->
+        <h1 class="hero-name">Nithin P K</h1>
+
+        <!-- ANIMATED TEXT -->
+        <h2 class="hero-title">
+            <span id="typing"></span>
+        </h2>
+
+        <!-- FIXED SUBTITLE -->
+        <p class="hero-subtitle">
+            Full-Stack Developer crafting beautiful, functional web experiences with modern technologies
+        </p>
+
+        <!-- BUTTONS -->
+        <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">View My Work</a>
+            <a href="#contact" class="btn-outline">Get In Touch</a>
+        </div>
+
+        <!-- SOCIAL ICONS -->
+        <div class="social-icons">
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-envelope"></i></a>
+        </div>
+
+    </div>
+
+    <!-- GLOW -->
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+</section>
+
+    <!-- Background Glow -->
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+</section>
+        </div>
+
+        <!-- SOCIAL ICONS -->
+        <div class="mt-4">
+
+            <a href="https://github.com/YOUR_USERNAME" target="_blank" class="social-icon">
+                <i class="bi bi-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" class="social-icon">
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <div class="container text-center">
+
+        <h2 class="about-title">About Me</h2>
+
+        <div class="about-card">
+
+            <p>
+                I am a Bachelor of Computer Applications (BCA) graduate from the University of Mysore, specializing in full-stack development. Though a fresher, I am passionate about coding and eager to grow in this dynamic field. I love turning complex problems into simple, beautiful, and intuitive solutions.
+            </p>
+
+            <p>
+                When I’m not coding, I explore new technologies, contribute to open source projects, and share knowledge with the developer community. I am committed to honing my skills and embracing challenges. I look forward to building scalable and innovative applications in full-stack development.
+            </p>
+
+            <h4 class="tech-title">Tech Stack</h4>
+
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>HTML5</span>
+                <span>MySQL</span>
+                <span>React.js</span>
+                <span>Linux</span>
+                <span>GitHub</span>
+                <span>Git</span>
+                <span>MongoDB</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+
+
+<!-- PROJECTS -->
+<section id="projects" class="section project-bg">
+    <div class="container">
+
+        <h2 class="project-title text-center">Featured Projects</h2>
+
+        <div class="row justify-content-center">
+
+            <!-- PROJECT 1 -->
+            <div class="col-md-5 mt-4 d-flex">
+                <div class="project-card">
+
+                    <img src="{% static 'images/project1.png' %}"  class="project-img">
+
+                    <div class="project-body">
+                        <h4>Specimen Detection Using Deep Learning</h4>
+
+                        <p>
+                            Designed and trained a CNN to classify animal species using voice and footprint images.
+                            Achieved 99% validation accuracy and built a real-time interface using Streamlit.
+                        </p>
+
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Keras</span>
+                            <span>OpenCV</span>
+                            <span>Streamlit</span>
+                        </div>
+
+                        <a href="https://github.com/Nithin2003pk" class="project-btn">GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="col-md-5 mt-4 d-flex">
+                <div class="project-card">
+
+                    <img src="{% static 'images/project2.png' %}" class="project-img">
+
+                    <div class="project-body">
+                        <h4>Personal Portfolio Website</h4>
+
+                        <p>
+                            A personal portfolio showcasing skills, projects and achievements. Helps connect with employers and clients professionally. Highlights my problem-solving abilities and passion for building impactful, user-friendly applications.
+                        </p>
+
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Django</span>
+                        </div>
+
+                        <a href="" class="project-btn">Live Demo</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+<section id="certifications" class="section">
+    <div class="container">
+        <h2 class="section-title text-center">Certifications</h2>
+
+<div class="row justify-content-center">
+
+    <!-- CERT 1 -->
+    <div class="col-md-6 col-lg-5 mt-4">
+        <div class="cert-card">
+            <div class="cert-header">
+                <h4>Cybersecurity Analyst Job Simulation</h4>
+                <a href="{% static 'certificates/cybersecurity.pdf' %}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <p>Tata Group</p>
+            <p>Issued 2024</p>
+        </div>
+    </div>
+
+    <!-- CERT 2 -->
+    <div class="col-md-6 col-lg-5 mt-4">
+        <div class="cert-card">
+            <div class="cert-header">
+                <h4>Data Analytics & Visualization</h4>
+                <a href="{% static 'certificates/Accenture.pdf' %}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <p>Accenture</p>
+            <p>Issued 2024</p>
+        </div>
+    </div>
+
+    <!-- CERT 3 -->
+    <div class="col-md-6 col-lg-5 mt-4">
+        <div class="cert-card">
+            <div class="cert-header">
+                <h4>Advanced Excel Certificate</h4>
+                <a href="{% static 'certificates/Excel.pdf' %}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <p>Issued 2025</p>
+        </div>
+    </div>
+
+    <!-- CERT 4 -->
+    <div class="col-md-6 col-lg-5 mt-4">
+        <div class="cert-card">
+            <div class="cert-header">
+                <h4>SQL Certifications</h4>
+                <a href="{% static 'certificates/HackerRank.pdf' %}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <p>HackerRank</p>
+            <p>Issued 2025</p>
+        </div>
+    </div>
+
+     <!-- CERT 5 -->
+    <div class="col-md-6 col-lg-5 mt-4">
+        <div class="cert-card">
+            <div class="cert-header">
+                <h4>Python Certifications</h4>
+                <a href="{% static 'certificates/HackerRank1.pdf' %}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <p>HackerRank</p>
+            <p>Issued 2025</p>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<!-- RESUME SECTION -->
+<section class="resume-section">
+    <div class="resume-container">
+
+        <div class="resume-icon">
+            <i class="fa-solid fa-file"></i>
+        </div>
+
+        <h2>Ready to work together?</h2>
+
+        <p>
+            Download or view my resume to learn more about my experience, skills, and achievements.
+        </p>
+
+        <div class="resume-buttons">
+            
+            <!-- DOWNLOAD -->
+            <a href="/media/Resume.pdf" download class="btn-primary">
+                <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+
+            <!-- VIEW -->
+            <a href="/media/Resume.pdf" target="_blank" class="btn-outline">
+                <i class="fa-solid fa-eye"></i> View Resume
+            </a>
+
+        </div>
+
+        <p class="resume-info">PDF • Updated 2025</p>
+
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+    <div class="container">
+
+        <h2 class="section-title text-center">Experience</h2>
+
+        <div class="about-card" data-aos="fade-up">
+
+            <h3 class="exp-title">
+                Artificial Intelligence Intern | <span>AIMIT</span>
+            </h3>
+
+            <p class="exp-date">Dec 2024 - Apr 2025 | Mysuru, Karnataka</p>
+
+            <p class="exp-text">
+                Developed and tested AI-based applications using Python and deep learning frameworks. 
+                Worked with Git and GitHub for version control and collaborative development. 
+                Integrated REST APIs and understood deployment workflows for AI projects.
+            </p>
+
+            <p class="exp-text">
+                Implemented small-scale machine learning solutions such as chatbots and image recognition systems. 
+                Gained practical exposure to model training, validation, and performance optimization.
+            </p>
+
+            <!-- SKILLS -->
+            <h4 class="tech-title">Technologies Used</h4>
+
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>TensorFlow</span>
+                <span>Keras</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>REST API</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+    <div class="container contact-container">
+
+        <h2 class="section-title text-center">Get In Touch</h2>
+
+        <div class="contact-grid">
+
+            <!-- LEFT SIDE -->
+            <div class="contact-info">
+
+                <h3>Let's start a conversation</h3>
+
+                <p>
+                    I'm always open to discussing new opportunities, interesting
+                    projects, or just having a chat about technology and development.
+                </p>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <p>nithinpk136@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Phone</strong>
+                        <p>+91 8660459019</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Location</strong>
+                        <p>Kutta Kodagu, Karnataka</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE FORM -->
+            <div class="contact-form">
+
+                <h3>Send a Message</h3>
+
+                <form method="POST">
+                    {% csrf_token %}
+
+                    <input type="text" name="name" placeholder="Your full name" required>
+                    <input type="email" name="email" placeholder="your.email@example.com" required>
+
+                    <textarea name="message" rows="5" placeholder="Tell me about your project or just say hello..."></textarea>
+
+                    <button type="submit" class="contact-btn">Send Message</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<script>
+const roles = [
+    "Full-Stack Developer",
+    "Django Developer",
+    "React Developer",
+    "AI Enthusiast"
+];
+
+let i = 0;
+let j = 0;
+let current = "";
+let isDeleting = false;
+
+function type() {
+    current = roles[i];
+
+    if (isDeleting) {
+        j--;
+    } else {
+        j++;
+    }
+
+    document.getElementById("typing").innerHTML = current.substring(0, j);
+
+    if (!isDeleting && j === current.length) {
+        isDeleting = true;
+        setTimeout(type, 1000);
+        return;
+    }
+
+    if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % roles.length;
+    }
+
+    setTimeout(type, isDeleting ? 50 : 100);
+}
+
+type();
+</script>
+</body>
+</html>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- LEFT SIDE -->
+        <div class="footer-left">
+            <h3>Nithin P K</h3>
+            <p>Full-Stack Developer • Turning ideas into reality</p>
+        </div>
+
+        <!-- RIGHT SIDE (ICONS) -->
+        <div class="footer-icons">
+
+            <a href="https://github.com/Nithin2003pk" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/nithin-p-k-49870a323" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="mailto:nithinpk136@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="footer-copy">© 2026 Nithin P K. All rights reserved.</p>
+
+</footer>

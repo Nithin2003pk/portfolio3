@@ -132,7 +132,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 EMAIL_HOST_USER = 'nithinpk136@gmail.com'
-EMAIL_HOST_PASSWORD = 'your_app_password'
+EMAIL_HOST_PASSWORD = 'odex cfpj czek szdr'
 
 import os
 

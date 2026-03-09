@@ -23,7 +23,7 @@ def home(request):
             message=f"Email: {email}\n\nMessage:\n{message}",
             from_email='nithinpk136@gmail.com',
             recipient_list=['nithinpk136@gmail.com'],
-            fail_silently=False,
+            fail_silently=True,
         )
 
     return render(request, "index.html", {'projects': projects})
